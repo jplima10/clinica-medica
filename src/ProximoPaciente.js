@@ -1,4 +1,3 @@
-// ProximoPaciente.js
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 
@@ -20,7 +19,7 @@ const ProximoPaciente = ({ proximoPaciente, limparProximoPaciente }) => {
 
   return (
     <div className="component proximo-paciente">
-      <h2>Próximo Paciente</h2>
+      <h2>Paciente em Atendimento</h2>
       <div>
         <strong>Nome:</strong> {proximoPaciente.nome}
       </div>

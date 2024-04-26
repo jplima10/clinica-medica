@@ -1,7 +1,6 @@
 import React from 'react';
 
 const FilaEspera = ({ pacientes, especialidade, onClickChamar }) => {
-  // Verifica se pacientes é uma matriz antes de aplicar o filtro
   const pacientesFiltrados = Array.isArray(pacientes) ? pacientes.filter(paciente => paciente.especialidade === especialidade) : [];
 
   return (

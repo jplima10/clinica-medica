@@ -1,8 +1,7 @@
-// PacienteForm.js
 import React, { useState } from 'react';
 import { Button, Form, Row, Col } from 'react-bootstrap';
 
-const PacienteForm = ({ onSubmit }) => { // Remova a propriedade onSave
+const PacienteForm = ({ onSubmit }) => { 
   const [nome, setNome] = useState('');
   const [especialidade, setEspecialidade] = useState('');
 

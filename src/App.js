@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import PacienteForm from './PacienteForm';
 import FilaEspera from './FilaEspera';
@@ -28,13 +27,12 @@ const App = () => {
   const adicionarPaciente = ({ nome, especialidade }) => {
     setPacientes(prevPacientes => {
       const updatedPacientes = { ...prevPacientes };
-      // Verifica se prevPacientes[especialidade] é uma matriz ou inicializa como uma matriz vazia
       const pacientesDaEspecialidade = Array.isArray(prevPacientes[especialidade]) ? prevPacientes[especialidade] : [];
       const pacienteExistente = pacientesDaEspecialidade.find(paciente => paciente.nome === nome);
   
       if (pacienteExistente) {
         alert(`O paciente ${nome} já está na lista de espera para ${especialidade}.`);
-        return prevPacientes; // Retorna o estado anterior sem fazer alterações
+        return prevPacientes;
       }
   
       const novoPaciente = { nome, especialidade };
