@@ -1,0 +1,13 @@
+body {
+    background-image: url('https://www.freepik.com/free-vector/healthcare-medical-background-with-heart-beat-line_2395622.htm?epik=dj0yJnU9bDJtVHZRMlExb1c3RndHeDB5cTg5ZkZJRUV1R2pIWGImcD0wJm49Q01OV2hJdlRwTE0xeWxIVXFjZWJfdyZ0PUFBQUFBR1lyRlI0');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Definir altura total da página */
+    margin: 0; /* Remover margens padrão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos adicionais para elementos dentro da página, se necessário */
+  
